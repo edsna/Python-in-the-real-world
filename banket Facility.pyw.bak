@@ -1,0 +1,21 @@
+#BANKET FACILITY
+
+PriceAdult = 22.5
+PriceChild = 10.50
+beverage = 2
+
+Adults = input("Enter number of adults")
+Childs = input("Enter number of Childs")
+
+DinnerCost = Adults*PriceAdult+Childs*PriceChild
+
+TotalBeverageCharge = beverage*Adults+beverage*Childs
+
+#Overall Cost
+
+OverallCost = DinnerCost+TotalBeverageCharge 
+
+print "Your DInner Cost is:", DinnerCost
+print "Your Total Beverage Charge Cost is:", TotalBeverageCharge 
+print "Your Total Beverage Charge is", OverallCost
+ 

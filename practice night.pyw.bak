@@ -1,0 +1,9 @@
+#BANQUET FACILITY
+
+NumPeople = input("How many people will attend the party")
+PeopleTable = 10
+NumFullTable = NumPeople/PeopleTable
+ExtraPeople = NumPeople%PeopleTable
+NumFullTable = (NumPeople/PeopleTable)
+print "There are ", NumFullTable, "full tables"
+print ExtraPeople, "will need to be squeezed in" 

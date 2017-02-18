@@ -1,0 +1,62 @@
+#Quiz 1 Fall 2013
+
+x= 10
+y= 3
+z= 3.0
+
+num1 = x/y
+print "num1 = ", num1
+num2 = x/z
+print "num2 = ", num2
+num3 = x+5*3-1+y*4/2
+print "num3 = ", num3
+x=x+2
+num4 = x%y
+print "num4 = ", num4
+num5 = float (y/2)
+print "num5 = ", num5
+num6 = float(y)/2
+print "num6 = ", num6
+
+#Question 2
+A = 56
+B = 100
+C = 200
+
+if D==A or D>=B and D<=C:
+    print "Okay"
+else:
+    print "Incorrect" 
+    
+    
+
+    #Imputs
+CostOfOrder = input("Type Cost of Order Here")
+ShippingCost = input("Type Shipping Cost Here")
+CouponCode = input("Type your Coupon Code Here")
+
+#Shipping Discount Qualification
+if CouponCode >= 300:
+    print "Your Order Qualifies for a Shipping Disccount"
+
+else:
+    print "Your Order does not qualify for a shipping disccount"
+    
+#Order Cost
+OrderCost = (CostOfOrder+ShippingCost)
+print "Your Total is:",OrderCost
+
+#New Shipping Disccount
+#NewShippingCost = (OrderCost-)
+if OrderCost >=500:
+    NewShippingCost = (OrderCost-ShippingCost)
+elif OrderCost >= 300 and OrderCost <=500:
+    NewShippingCost = (OrderCost-(ShippingCost/2))
+else:
+    NewShippingCost = (OrderCost-(ShippingCost/0.03))
+    
+
+
+#Final Total
+FinalTotal = (OrderCost-NewShippingCost)
+print "Your Final Total is:", FinalTotal
